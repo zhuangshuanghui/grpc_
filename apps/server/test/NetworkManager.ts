@@ -1,0 +1,139 @@
+import { getProtoPathByRpcFunc, RpcFunc } from "../common";
+// @ts-ignore
+import protoRoot from "../common/idl/auto-gen-ws";
+import { WebSocket } from "ws";
+
+const TIMEOUT = 5000;
+
+interface IItem {
+  cb: Function;
+  ctx: unknown;
+}
+
+export type IData = Record<string, any>;
+
+export default class NetworkManager {
+  ws: WebSocket;
+  port = 4000;
+  maps: Map<RpcFunc, Array<IItem>> = new Map();
+  isConnected = false;
+
+  connect() {
+    return new Promise((resolve, reject) => {
+      if (this.isConnected) {
+        resolve(true);
+        return;
+      }
+      this.ws = new WebSocket(`ws://localhost:${this.port}`);
+      //onmessage接受的数据类型，只有在后端返回字节数组的时候才有效果
+      this.ws.binaryType = "arraybuffer";
+
+      this.ws.on("open", () => {
+        this.isConnected = true;
+        resolve(true);
+      });
+
+      this.ws.on("close", () => {
+        this.isConnected = false;
+        console.log("ws onclose");
+        reject("ws close");
+      });
+
+      this.ws.on("error", (e) => {
+        this.isConnected = false;
+        console.log(e);
+        reject("ws error");
+      });
+
+      this.ws.on("message", (buffer: ArrayBuffer) => {
+        try {
+          const ta = new Uint8Array(buffer);
+          const name = ta[0] as RpcFunc;
+
+          // 根据name生成对应的编码器并解码出数据data
+          const path = getProtoPathByRpcFunc(name, "res");
+
+          const coder = protoRoot.lookup(path);
+          const data = coder.decode(ta.slice(1));
+
+          try {
+            if (this.maps.has(name) && this.maps.get(name)!.length) {
+              this.maps.get(name)!.forEach(({ cb, ctx }) => cb.call(ctx, data));
+            } else {
+              console.log(`no ${name} message or callback, maybe timeout`);
+            }
+          } catch (error) {
+            console.log("call error:", error);
+          }
+        } catch (error) {
+          console.log("onmessage parse error:", error);
+        }
+      });
+    });
+  }
+
+  close() {
+    this.ws.close();
+    this.isConnected = false;
+  }
+
+  call(name: RpcFunc, data: IData) {
+    return new Promise<{ data?: any; error?: string }>((resolve) => {
+      try {
+        // 超时处理
+        const timer = setTimeout(() => {
+          resolve({ error: "Time Out!" });
+          this.unListen(name, cb, null);
+        }, TIMEOUT);
+
+        // 回调处理
+        const cb = (res: any) => {
+          resolve(res);
+          clearTimeout(timer);
+          this.unListen(name, cb, null);
+        };
+
+        // 监听响应事件触发回调
+        this.listen(name, cb, null);
+
+        // 发送消息
+        this.send(name, data);
+      } catch (error: any) {
+        resolve({ error });
+      }
+    });
+  }
+
+  async send(name: RpcFunc, data: IData) {
+    // 根据name生成对应的编码器并编码生成TypeArray
+    const path = getProtoPathByRpcFunc(name, "req");
+    const coder = protoRoot.lookup(path);
+    const ta = coder.encode(data).finish();
+
+    /** 封包二进制数组，格式是[name,...data] */
+    const ab = new ArrayBuffer(ta.length + 1);
+    const view = new DataView(ab);
+    let index = 0;
+    view.setUint8(index++, name);
+    for (let i = 0; i < ta.length; i++) {
+      view.setUint8(index++, ta[i]);
+    }
+    this.ws.send(view.buffer);
+  }
+
+  listen(name: RpcFunc, cb: (args: any) => void, ctx: unknown) {
+    if (this.maps.has(name)) {
+      this.maps.get(name)!.push({ ctx, cb });
+    } else {
+      this.maps.set(name, [{ ctx, cb }]);
+    }
+  }
+
+  unListen(name: RpcFunc, cb: (args: any) => void, ctx: unknown) {
+    if (this.maps.has(name)) {
+      const items = this.maps.get(name);
+      const index = items!.findIndex((i) => cb === i.cb && i.ctx === ctx);
+      index > -1 && items!.splice(index, 1);
+    }
+  }
+}
