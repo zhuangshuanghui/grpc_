@@ -1,0 +1,109 @@
+{
+  "ver": "1.0.8",
+  "importer": "sprite-atlas",
+  "imported": true,
+  "uuid": "f16168d7-cf64-4fa9-b9da-af87cae2c194",
+  "files": [
+    ".json"
+  ],
+  "subMetas": {
+    "18957": {
+      "importer": "sprite-frame",
+      "uuid": "f16168d7-cf64-4fa9-b9da-af87cae2c194@18957",
+      "displayName": "",
+      "id": "18957",
+      "name": "dy_game",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 1,
+        "trimY": 1,
+        "width": 400,
+        "height": 217,
+        "rawWidth": 400,
+        "rawHeight": 217,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "pixelsToUnit": 100,
+        "pivotX": 0.5,
+        "pivotY": 0.5,
+        "meshType": 0,
+        "vertices": {
+          "rawPosition": [],
+          "indexes": [],
+          "uv": [],
+          "nuv": [],
+          "minPos": [],
+          "maxPos": []
+        },
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "bff7d097-a1d5-47bb-9dd2-008ae7a89cf6@6c48a",
+        "atlasUuid": "f16168d7-cf64-4fa9-b9da-af87cae2c194"
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    },
+    "4428f": {
+      "importer": "sprite-frame",
+      "uuid": "f16168d7-cf64-4fa9-b9da-af87cae2c194@4428f",
+      "displayName": "",
+      "id": "4428f",
+      "name": "dy_click",
+      "userData": {
+        "trimType": "auto",
+        "trimThreshold": 1,
+        "rotated": false,
+        "offsetX": 0,
+        "offsetY": 0,
+        "trimX": 403,
+        "trimY": 1,
+        "width": 400,
+        "height": 120,
+        "rawWidth": 400,
+        "rawHeight": 120,
+        "borderTop": 0,
+        "borderBottom": 0,
+        "borderLeft": 0,
+        "borderRight": 0,
+        "packable": true,
+        "pixelsToUnit": 100,
+        "pivotX": 0.5,
+        "pivotY": 0.5,
+        "meshType": 0,
+        "vertices": {
+          "rawPosition": [],
+          "indexes": [],
+          "uv": [],
+          "nuv": [],
+          "minPos": [],
+          "maxPos": []
+        },
+        "isUuid": true,
+        "imageUuidOrDatabaseUri": "bff7d097-a1d5-47bb-9dd2-008ae7a89cf6@6c48a",
+        "atlasUuid": "f16168d7-cf64-4fa9-b9da-af87cae2c194"
+      },
+      "ver": "1.0.12",
+      "imported": true,
+      "files": [
+        ".json"
+      ],
+      "subMetas": {}
+    }
+  },
+  "userData": {
+    "atlasTextureName": "douYinRewardAtlas.png",
+    "format": 2,
+    "uuid": "f16168d7-cf64-4fa9-b9da-af87cae2c194",
+    "textureUuid": "bff7d097-a1d5-47bb-9dd2-008ae7a89cf6@6c48a"
+  }
+}

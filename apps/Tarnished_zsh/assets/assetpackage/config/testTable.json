@@ -1,0 +1,128 @@
+{
+  "89": {
+    "GateId": "gate0101",
+    "GateName": "英雄出世",
+    "PowerCost": 5,
+    "LvLimite": 1,
+    "BeginStoryId": "NewSt002",
+    "id": "89",
+    "xian": [
+      1,
+      2,
+      3
+    ],
+    "erqae": [
+      [
+        1,
+        2,
+        3
+      ],
+      [
+        5,
+        6,
+        7
+      ]
+    ],
+    "adfw": [
+      "xian",
+      "yuyu"
+    ],
+    "qwe": [
+      [
+        "fdg",
+        "fagfas"
+      ],
+      [
+        "fdgkkkk"
+      ]
+    ]
+  },
+  "1": {
+    "GateId": "gate0102",
+    "GateName": "初遇黄巾",
+    "PowerCost": 5,
+    "LvLimite": 2,
+    "BeginStoryId": "NewSt004",
+    "id": "1",
+    "xian": null,
+    "erqae": null,
+    "adfw": null,
+    "qwe": [
+      [
+        "s"
+      ]
+    ]
+  },
+  "2": {
+    "GateId": "gate0103",
+    "GateName": "人公将军",
+    "PowerCost": 5,
+    "LvLimite": 3,
+    "BeginStoryId": null,
+    "id": "2",
+    "xian": null,
+    "erqae": null,
+    "adfw": null,
+    "qwe": null
+  },
+  "3": {
+    "GateId": "gate0104",
+    "GateName": "地公将军",
+    "PowerCost": 5,
+    "LvLimite": 4,
+    "BeginStoryId": null,
+    "id": "3",
+    "xian": null,
+    "erqae": null,
+    "adfw": null,
+    "qwe": null
+  },
+  "4": {
+    "GateId": "gate0105",
+    "GateName": "天公将军",
+    "PowerCost": 5,
+    "LvLimite": 5,
+    "BeginStoryId": null,
+    "id": "4",
+    "xian": null,
+    "erqae": null,
+    "adfw": null,
+    "qwe": null
+  },
+  "5": {
+    "GateId": "gate0201",
+    "GateName": "温酒斩华雄",
+    "PowerCost": 5,
+    "LvLimite": 6,
+    "BeginStoryId": "NewSt006",
+    "id": "5",
+    "xian": null,
+    "erqae": null,
+    "adfw": null,
+    "qwe": null
+  },
+  "6": {
+    "GateId": "gate0202",
+    "GateName": "少帝之死",
+    "PowerCost": 5,
+    "LvLimite": 7,
+    "BeginStoryId": null,
+    "id": "6",
+    "xian": null,
+    "erqae": null,
+    "adfw": null,
+    "qwe": null
+  },
+  "7": {
+    "GateId": "gate0203",
+    "GateName": "曹操的急行军",
+    "PowerCost": 5,
+    "LvLimite": 7,
+    "BeginStoryId": null,
+    "id": "7",
+    "xian": null,
+    "erqae": null,
+    "adfw": null,
+    "qwe": null
+  }
+}

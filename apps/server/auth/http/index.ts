@@ -32,7 +32,7 @@ export const httpStart = async () => {
       (err) => {
         if (err) {
           if (err.errno === 1062) {
-            res.json(createRes(CodeEnum.AccountExist));
+            res.json(createRes(CodeEnum.AccountExist));  //res.json  express提供的api  将对象转为json并发送
             return;
           }
           res.json(createRes(CodeEnum.SqlError));
@@ -70,6 +70,18 @@ export const httpStart = async () => {
     });
   });
 
+  app.post("/xianxian",function (req,res) {
+    logger.info('收到请求体:', req.body); // 应该能打印 { abc: "123" }
+    res.json({ success: true }); // 返回一个 JSON 响应
+
+    // console.log("req",req);
+    // let item={name:"成功"}
+    // res.json(item)
+    
+    
+  })
+
+  //监听端口3000
   app.listen(ServerPort.AuthHttp, () => {
     logger.info("Auth HTTP服务启动");
   });

@@ -1,0 +1,1815 @@
+[
+    {
+        "id": "code_login",
+        "zhcn": "登录"
+    },
+    {
+        "id": "code_star",
+        "zhcn": "开始"
+    },
+    {
+        "id": "code_day",
+        "zhcn": "天"
+    },
+    {
+        "id": "code_hour",
+        "zhcn": "时"
+    },
+    {
+        "id": "code_minute",
+        "zhcn": "分"
+    },
+    {
+        "id": "code_second",
+        "zhcn": "秒"
+    },
+    {
+        "id": "code_day_ago",
+        "zhcn": "天前"
+    },
+    {
+        "id": "code_hour_ago",
+        "zhcn": "小时前"
+    },
+    {
+        "id": "code_hour_within",
+        "zhcn": "1小时内"
+    },
+    {
+        "id": "code_hundred",
+        "zhcn": "百"
+    },
+    {
+        "id": "code_thousand",
+        "zhcn": "千"
+    },
+    {
+        "id": "code_myriad",
+        "zhcn": "万"
+    },
+    {
+        "id": "code_calculate",
+        "zhcn": "亿"
+    },
+    {
+        "id": "code_calculate",
+        "zhcn": "亿"
+    },
+    {
+        "id": "code_level1",
+        "zhcn": "Lv {0}"
+    },
+    {
+        "id": "code_edit_default",
+        "zhcn": "点击输入...(7字内)"
+    },
+    {
+        "id": "code_edit_number",
+        "zhcn": "请输入数字"
+    },
+    {
+        "id": "code_edit_string",
+        "zhcn": "输入内容包含敏感字"
+    },
+    {
+        "id": "code_buy_des",
+        "zhcn": "已达购买最大数量"
+    },
+    {
+        "id": "code_buy_des2",
+        "zhcn": "已经是最小数量"
+    },
+    {
+        "id": "code_buy_des3",
+        "zhcn": "库存不足"
+    },
+    {
+        "id": "code_maozi",
+        "zhcn": "帽子"
+    },
+    {
+        "id": "code_xianglian",
+        "zhcn": "项链"
+    },
+    {
+        "id": "code_yifu",
+        "zhcn": "衣服"
+    },
+    {
+        "id": "code_yaodai",
+        "zhcn": "腰带"
+    },
+    {
+        "id": "code_kuzi",
+        "zhcn": "裤子"
+    },
+    {
+        "id": "code_huwan",
+        "zhcn": "护腕"
+    },
+    {
+        "id": "code_shoutao",
+        "zhcn": "手套"
+    },
+    {
+        "id": "code_jiezhi",
+        "zhcn": "戒指"
+    },
+    {
+        "id": "code_jingyuan",
+        "zhcn": "精元"
+    },
+    {
+        "id": "code_xiezi",
+        "zhcn": "鞋子"
+    },
+    {
+        "id": "code_force",
+        "zhcn": "战力"
+    },
+    {
+        "id": "code_item_notenough",
+        "zhcn": "道具不足"
+    },
+    {
+        "id": "code_tips",
+        "zhcn": "材料不足，无法完成本次操作"
+    },
+    {
+        "id": "code_login_des",
+        "zhcn": "重新连接服务器失败，请重新登录。"
+    },
+    {
+        "id": "code_docompose_tips1",
+        "zhcn": "（分解会使装备永久消失）"
+    },
+    {
+        "id": "code_docompose_tips2",
+        "zhcn": "此件装备的效果比现有装备更好，\n是否分解？"
+    },
+    {
+        "id": "code_docompose_tips3",
+        "zhcn": "继续分解"
+    },
+    {
+        "id": "code_docompose_tips4",
+        "zhcn": "替换此装备后战力降低，原装备分解。\n是否继续？"
+    },
+    {
+        "id": "code_swap",
+        "zhcn": "替换"
+    },
+    {
+        "id": "code_pet_qua_1",
+        "zhcn": "普通"
+    },
+    {
+        "id": "code_pet_qua_2",
+        "zhcn": "良好"
+    },
+    {
+        "id": "code_pet_qua_3",
+        "zhcn": "优先"
+    },
+    {
+        "id": "code_pet_qua_4",
+        "zhcn": "极品"
+    },
+    {
+        "id": "code_qua_1",
+        "zhcn": "普通"
+    },
+    {
+        "id": "code_qua_2",
+        "zhcn": "精良"
+    },
+    {
+        "id": "code_qua_3",
+        "zhcn": "稀有"
+    },
+    {
+        "id": "code_qua_4",
+        "zhcn": "史诗"
+    },
+    {
+        "id": "code_qua_5",
+        "zhcn": "传说"
+    },
+    {
+        "id": "code_qua_6",
+        "zhcn": "完美"
+    },
+    {
+        "id": "code_qua_7",
+        "zhcn": "超凡"
+    },
+    {
+        "id": "code_qua_8",
+        "zhcn": "璀璨"
+    },
+    {
+        "id": "code_qua_9",
+        "zhcn": "至尊"
+    },
+    {
+        "id": "code_qua_k",
+        "zhcn": "[{0}]"
+    },
+    {
+        "id": "code_slot_none",
+        "zhcn": "点击【开启宝箱】即可获得装备。"
+    },
+    {
+        "id":"code_equipUpWinows_des1",
+        "zhcn":"Lv.{0}"
+    },
+    {
+        "id":"code_equipUpWinows_des2",
+        "zhcn":"等级突破"
+    },
+    {
+        "id":"code_equipUpWinows_hp",
+        "zhcn": "生命:"
+    },
+    {
+        "id":"code_equipUpWinows_def",
+        "zhcn": "敏捷:"
+    },
+    {
+        "id":"code_equipUpWinows_atk",
+        "zhcn": "强壮:"
+    },
+    {
+        "id":"code_equipUpWinows_spd",
+        "zhcn": "速度:"
+    },
+    {
+        "id":"code_closeHead_des1",
+        "zhcn": "({0})"
+    },
+    {
+        "id": "code_chest_des",
+        "zhcn": "请先处理当前宝箱"
+    },
+    {
+        "id": "code_chest_des1",
+        "zhcn": "是否分解全部装备"
+    },
+    {
+        "id": "code_chest_des2",
+        "zhcn": "及以上"
+    },
+    {
+        "id": "code_chest_des3",
+        "zhcn": "任意"
+    },
+    {
+        "id": "code_chest_des4",
+        "zhcn": "宝箱{0}级解锁"
+    },
+    {
+        "id": "code_chest_des5",
+        "zhcn": "升级所需时间"
+    },
+    {
+        "id": "code_chest_des6",
+        "zhcn": "升级中"
+    },
+    {
+        "id": "code_chest_des7",
+        "zhcn": "观看视频后缩短{0}分钟升级时间"
+    },
+    {
+        "id": "code_chest_des8",
+        "zhcn": "可加速时间：{0}"
+    },
+    {
+        "id": "code_chest_des9",
+        "zhcn": "道具不足，委托结束"
+    },
+    {
+        "id": "code_chest_des10",
+        "zhcn": "委托结束"
+    },
+    {
+        "id": "code_chest_des11",
+        "zhcn": "加速已进入冷却时间"
+    },
+    {
+        "id": "code_chest_des12",
+        "zhcn": "当前等级:{0}"
+    },
+    {
+        "id": "code_chest_des13",
+        "zhcn": "下一等级:{0}"
+    },
+    {
+        "id": "code_chest_des14",
+        "zhcn": "基础属性"
+    },
+    {
+        "id": "code_chest_des15",
+        "zhcn": "战斗属性"
+    },
+    {
+        "id": "code_chest_des16",
+        "zhcn": "战斗抗性"
+    },
+    {
+        "id": "code_chest_des17",
+        "zhcn": "宝箱已升级"
+    },
+    {
+        "id": "code_chest_des18",
+        "zhcn": "拥有：{0}"
+    },
+    {
+        "id": "code_chest_des19",
+        "zhcn": "已选择最大使用数量"
+    },
+    {
+        "id": "code_level",
+        "zhcn": "{0}级"
+    },
+    {
+        "id": "code_skill_des",
+        "zhcn": "功能暂未开放"
+    },
+    {
+        "id": "code_skill_des1",
+        "zhcn": "等级上限"
+    },
+    {
+        "id": "code_skill_des2",
+        "zhcn": "主动技能"
+    },
+    {
+        "id": "code_skill_des3",
+        "zhcn": "被动技能"
+    },
+    {
+        "id": "code_skill_des4",
+        "zhcn": "上限突破"
+    },
+    {
+        "id": "code_skill_des5",
+        "zhcn": "等级上限"
+    },
+    {
+        "id": "code_skill_des6",
+        "zhcn": "技能未锁定"
+    },
+    {
+        "id": "code_skill_des7",
+        "zhcn": "技能已锁定"
+    },
+    {
+        "id": "code_skill_des8",
+        "zhcn": "获得{0}个开启洗练"
+    },
+    {
+        "id": "code_skill_des9",
+        "zhcn": "锁定"
+    },
+    {
+        "id": "code_skill_des10",
+        "zhcn": "解锁"
+    },
+    {
+        "id": "code_skill_des11",
+        "zhcn": "技能锁定数量已达上限"
+    },
+    {
+        "id": "code_skill_des12",
+        "zhcn": "已洗炼，无法锁定"
+    },
+    {
+        "id": "code_skill_des13",
+        "zhcn": "洗炼中"
+    },
+    {
+        "id": "code_weapon_des0",
+        "zhcn": "武器已满级"
+    },
+    {
+        "id": "code_weapon_des1",
+        "zhcn": "武器已满星"
+    },
+    {
+        "id": "code_weapon_des2",
+        "zhcn": "刀剑武器"
+    },
+    {
+        "id": "code_weapon_des3",
+        "zhcn": "重型武器"
+    },
+    {
+        "id": "code_weapon_des4",
+        "zhcn": "长柄武器"
+    },
+    {
+        "id": "code_weapon_des5",
+        "zhcn": "投掷武器"
+    },
+    {
+        "id": "code_weapon_des6",
+        "zhcn": "投掷{1}3次概率"
+    },
+    {
+        "id": "code_zhnum_1",
+        "zhcn": "一"
+    },
+    {
+        "id": "code_zhnum_2",
+        "zhcn": "二"
+    },
+    {
+        "id": "code_zhnum_3",
+        "zhcn": "三"
+    },
+    {
+        "id": "code_zhnum_4",
+        "zhcn": "四"
+    },
+    {
+        "id": "code_zhnum_5",
+        "zhcn": "五"
+    },
+    {
+        "id": "code_zhnum_6",
+        "zhcn": "六"
+    },
+    {
+        "id": "code_zhnum_7",
+        "zhcn": "七"
+    },
+    {
+        "id": "code_zhnum_8",
+        "zhcn": "八"
+    },
+    {
+        "id": "code_zhnum_9",
+        "zhcn": "九"
+    },
+    {
+        "id": "code_zhnum_10",
+        "zhcn": "十"
+    },
+    {
+        "id": "code_level_max",
+        "zhcn": "已满级"
+    },
+    {
+        "id": "code_login_err_1",
+        "zhcn": "登录失败"
+    },
+    {
+        "id": "code_login_err_2",
+        "zhcn": "登录失败，请检查网络连接是否正常"
+    },
+    {
+        "id": "code_fight_end",
+        "zhcn": "战斗未结束"
+    },
+    {
+        "id": "code_fight_unlock_xn",
+        "zhcn": "达到{0}级或购买终身卡解锁战斗加速"
+    },
+    {
+        "id": "code_pet_des",
+        "zhcn": "金币不足，无法进行本次操作。"
+    },
+    {
+        "id": "code_pet_des1",
+        "zhcn": "是否消耗{0}金币解锁1个宠物位置？"
+    },
+    {
+        "id": "code_pet_des2",
+        "zhcn": "※重复获得的宠物已经被变还了，获得对应数量的宠物碎片。"
+    },
+    {
+        "id": "code_pet_des3",
+        "zhcn": "功能暂未开启。"
+    },
+    {
+        "id": "code_pet_des4",
+        "zhcn": "当前宠物位置已满，新获得的宠物将自动转换成碎片。是否继续抓宠物？"
+    },
+    {
+        "id": "code_pet_cake",
+        "zhcn": "是否消耗{0}蛋糕，减少{1}饥饿值？"
+    },
+    {
+        "id": "code_pet_rebirth",
+        "zhcn": "是否消耗{0}/{1}碎片，进行宠物重生？"
+    },
+    {
+        "id": "code_pet_level",
+        "zhcn": "是否消耗1个{0},\n增加宠物{1}点{2}？"
+    },
+    {
+        "id": "code_pet_level1",
+        "zhcn": "是否消耗1个{0},\n随机增加宠物属性值"
+    },
+    {
+        "id": "code_pet_level2",
+        "zhcn": "已达当前宠物等级喂食上限"
+    },
+    {
+        "id": "code_pet_limit",
+        "zhcn": "宠物上阵已达上限"
+    },
+    {
+        "id": "code_pet_title",
+        "zhcn": "宠物属性"
+    },
+    {
+        "id": "code_pet_title1",
+        "zhcn": "宠物喂食"
+    },
+    {
+        "id": "code_pet_title2",
+        "zhcn": "宠物进化"
+    },
+    {
+        "id": "code_pet_cake_des",
+        "zhcn": "饥饿值已满"
+    },
+    {
+        "id": "code_pet_Log",
+        "zhcn": "※记录保持时间：{0}日，超过{1}条后，将从最早的记录开始删除"
+    },
+    {
+        "id": "code_item_name",
+        "zhcn": "道具"
+    },
+    {
+        "id": "code_pet_name",
+        "zhcn": "宠物"
+    },
+    {
+        "id": "code_pet_attr_now",
+        "zhcn": "当前属性"
+    },
+    {
+        "id": "code_pet_attr_next",
+        "zhcn": "升级属性"
+    },
+    {
+        "id": "code_pet_attr_strength",
+        "zhcn": "成长属性"
+    },
+    {
+        "id": "code_pet_evolute_succ",
+        "zhcn": "进化成功"
+    },
+    {
+        "id": "code_pet_evolute_fail",
+        "zhcn": "进化失败"
+    },
+    {
+        "id": "code_pet_feed_cnt",
+        "zhcn": "可喂食次数: {0}"
+    },
+    {
+        "id": "code_pet_addexp_cnt",
+        "zhcn": "可培养次数: {0}"
+    },
+    {
+        "id": "code_pet_lottery_cost",
+        "zhcn": "道具不足，是否消耗<img src='{0}'/>x{1} 抽取？"
+    },
+    {
+        "id": "code_pet_prob_title1",
+        "zhcn": "召唤概率"
+    },
+    {
+        "id": "code_pet_prob_title2",
+        "zhcn": "进化概率"
+    },
+    {
+        "id": "code_tower_des",
+        "zhcn": "下一层：{0}"
+    },
+    {
+        "id": "code_tower_time",
+        "zhcn": "自动进入下一层：{0}s"
+    },
+    {
+        "id": "code_tower_des1",
+        "zhcn": "第{0}层"
+    },
+    {
+        "id": "code_tower_des4",
+        "zhcn": "已通关最高层"
+    },
+    {
+        "id": "code_tower_time1",
+        "zhcn": "{0}后重置"
+    },
+    {
+        "id": "code_tower_des5",
+        "zhcn": "未解锁"
+    },
+    {
+        "id": "code_tower_des6",
+        "zhcn": "未开放"
+    },
+    {
+        "id": "code_tower_des7",
+        "zhcn": "已击败"
+    },
+    {
+        "id": "code_tower_des8",
+        "zhcn": "需通关上一层"
+    },
+    {
+        "id": "code_tower_des9",
+        "zhcn": "通关{0}层"
+    },
+    {
+        "id": "code_fight_exp",
+        "zhcn": "+{0}经验"
+    },
+    {
+        "id": "code_item_num",
+        "zhcn": "拥有道具数量：{0}"
+    },
+    {
+        "id": "code_item_10001",
+        "zhcn": "钻石"
+    },
+    {
+        "id": "code_item_des1",
+        "zhcn": "道 具"
+    },
+    {
+        "id": "code_item_des2",
+        "zhcn": "材 料"
+    },
+    {
+        "id": "code_item_des3",
+        "zhcn": "碎 片"
+    },
+    {
+        "id": "code_arena_rank",
+        "zhcn": "排名: {0}"
+    },
+    {
+        "id": "code_arena_des",
+        "zhcn": "※每日0:00发放对应排名奖励！"
+    },
+    {
+        "id": "code_arena_des1",
+        "zhcn": "免费刷新：{0}"
+    },
+    {
+        "id": "code_arena_des2",
+        "zhcn": "挑战次数不足"
+    },
+    {
+        "id": "code_rank_des",
+        "zhcn": "第{0}名"
+    },
+    {
+        "id": "code_rank_des1",
+        "zhcn": "{0}"
+    },
+    {
+        "id": "code_rank_des2",
+        "zhcn": "{0}层"
+    },
+    {
+        "id": "code_rank_des3",
+        "zhcn": "{0}分"
+    },
+    {
+        "id": "code_rank_des4",
+        "zhcn": "进度"
+    },
+    {
+        "id": "code_rank_des5",
+        "zhcn": "积分"
+    },
+    {
+        "id": "code_rank_des6",
+        "zhcn": "未入榜"
+    },
+    {
+        "id": "code_rank_des7",
+        "zhcn": "未上榜"
+    },
+    {
+        "id": "code_guild_des1",
+        "zhcn": "你要对【{0}】玩家执行的操作是"
+    },
+    {
+        "id": "code_guild_input1",
+        "zhcn": "输入公会编号或公会名...."
+    },
+    {
+        "id": "code_guild_des2",
+        "zhcn": "所有人可加入"
+    },
+    {
+        "id": "code_guild_des3",
+        "zhcn": "需要验证加入"
+    },
+    {
+        "id": "code_guild_des4",
+        "zhcn": "职位变更"
+    },
+    {
+        "id": "code_guild_des5",
+        "zhcn": "移出公会"
+    },
+    {
+        "id": "code_guild_des6",
+        "zhcn": "升为副会长"
+    },
+    {
+        "id": "code_guild_des7",
+        "zhcn": "降为成员"
+    },
+    {
+        "id": "code_guild_des8",
+        "zhcn": "在线"
+    },
+    {
+        "id": "code_guild_des9",
+        "zhcn": "会长不能离开公会，需转让会长才可退出。"
+    },
+    {
+        "id": "code_guild_des10",
+        "zhcn": "退出公会需{0}小时后才能加入新公会"
+    },
+    {
+        "id": "code_guild_des11",
+        "zhcn": "是否将会长职位移交给【{0}】"
+    },
+    {
+        "id": "code_guild_des12",
+        "zhcn": "是否将【{0}】任命为副会长，\n副会长将拥有过除了任命会长、任命副会长\n之外的一切权力"
+    },
+    {
+        "id": "code_guild_des13",
+        "zhcn": "是否将【{0}】移出公会？"
+    },
+    {
+        "id": "code_guild_des14",
+        "zhcn": "是否将【{0}】降为普通成员？"
+    },
+    {
+        "id": "code_guild_des15",
+        "zhcn": "{0}级解锁"
+    },
+    {
+        "id": "code_guild_des16",
+        "zhcn": "是否消耗{0}钻石创建公会？"
+    },
+    {
+        "id": "code_guild_des17",
+        "zhcn": "请输入公会名"
+    },
+    {
+        "id": "code_guild_des18",
+        "zhcn": "改名成功"
+    },
+    {
+        "id": "code_guild_des19",
+        "zhcn": "是否消耗{0}钻石更改公会名字？"
+    },
+    {
+        "id": "code_guild_des20",
+        "zhcn": "已经申请加入"
+    },
+    {
+        "id": "code_guild_des21",
+        "zhcn": "申请加入成功"
+    },
+    {
+        "id": "code_guild_des22",
+        "zhcn": "{0}后可以加入公会"
+    },
+    {
+        "id": "code_guild_des23",
+        "zhcn": "退出公会成功"
+    },
+    {
+        "id": "code_guild_des24",
+        "zhcn": "公会宣言"
+    },
+    {
+        "id": "code_guild_des25",
+        "zhcn": "公会公告"
+    },
+    {
+        "id": "code_guild_des26",
+        "zhcn": "你被移出公会"
+    },
+    {
+        "id": "code_guild_des27",
+        "zhcn": "设置成功"
+    },
+    {
+        "id": "code_guild_des28",
+        "zhcn": "转让会长后才能退出公会"
+    },
+    {
+        "id": "code_guild_des29",
+        "zhcn": "退出公会后，公会将解散，是否退出？"
+    },
+    {
+        "id": "code_guild_des30",
+        "zhcn": "已向<color=#1dc166>{0}</color>发送入会请求"
+    },
+    {
+        "id": "code_guild_des31",
+        "zhcn": "公会名字输入内容包含敏感字"
+    },
+    {
+        "id": "code_guild_des32",
+        "zhcn": "公会宣言输入内容包含敏感字"
+    },
+    {
+        "id": "code_guild_des33",
+        "zhcn": "公会公告输入内容包含敏感字"
+    },
+    {
+        "id": "code_guild_des34",
+        "zhcn": "报名倒计时"
+    },
+    {
+        "id": "code_guild_des35",
+        "zhcn": "挑战倒计时"
+    },
+    {
+        "id": "code_guild_des36",
+        "zhcn": "挑战中倒计时"
+    },
+    {
+        "id": "code_guild_des37",
+        "zhcn": "报名成功"
+    },
+    {
+        "id": "code_guild_des38",
+        "zhcn": "报名参加"
+    },
+    {
+        "id": "code_guild_des39",
+        "zhcn": "已报名"
+    },
+    {
+        "id": "code_guild_des40",
+        "zhcn": "未报名"
+    },
+    {
+        "id": "code_guild_des41",
+        "zhcn": "已结束"
+    },
+    {
+        "id": "code_guild_des42",
+        "zhcn": "Boss挑战已结束,等到明天才能报名参加挑战"
+    },
+    {
+        "id": "code_guild_des43",
+        "zhcn": "已参加过报名"
+    },
+    {
+        "id": "code_guild_des44",
+        "zhcn": "已错过报名时间"
+    },
+    {
+        "id": "code_guild_des45",
+        "zhcn": "等待挑战"
+    },
+    {
+        "id": "code_guild_des46",
+        "zhcn": "挑战中"
+    },
+    {
+        "id": "code_guild_des47",
+        "zhcn": "等待挑战Boss"
+    },
+    {
+        "id": "code_guild_des48",
+        "zhcn": "正在挑战Boss中"
+    },
+    {
+        "id": "code_guild_des49",
+        "zhcn": "报名人数：{0}/{1}"
+    },
+    {
+        "id": "code_guild_des50",
+        "zhcn": "Boss未解锁"
+    },
+    {
+        "id": "code_guild_des51",
+        "zhcn": "[{0}]挑战首领[{1}]胜利，得到[积分{2}]。<color=#5c8bf4><on click=\"onClicked\">查看战斗</on></color>"
+    },
+    {
+        "id": "code_guild_des52",
+        "zhcn": "[{0}]挑战首领[{1}]失败。<color=#5c8bf4><on click=\"onClicked\">查看战斗</on></color>"
+    },
+    {
+        "id": "code_guild_des53",
+        "zhcn": "无"
+    },
+    {
+        "id": "code_task_time1",
+        "zhcn": "※每日4点刷新任务列表"
+    },
+    {
+        "id": "code_task_time2",
+        "zhcn": "※每周一4点刷新任务列表"
+    },
+    {
+        "id": "code_task_nocomplete",
+        "zhcn": "没有可领取的任务"
+    },
+    {
+        "id": "code_task_des1",
+        "zhcn": "今日活跃度"
+    },
+    {
+        "id": "code_task_des2",
+        "zhcn": "本周活跃度"
+    },
+    {
+        "id": "code_shop_leftnum",
+        "zhcn": "剩余:{0}"
+    },
+    {
+        "id": "code_shop_free",
+        "zhcn": "免费"
+    },
+    {
+        "id": "code_shop_noreset",
+        "zhcn": "今日可刷新次数已用完"
+    },
+    {
+        "id": "code_shop_resetsucc",
+        "zhcn": "刷新成功"
+    },
+    {
+        "id": "code_shop_refreshtime",
+        "zhcn": "{0}后刷新"
+    },
+    {
+        "id": "code_shop_timeDay",
+        "zhcn": "{0}天{1}小时后刷新"
+    },
+    {
+        "id": "code_shop_timeDayHour",
+        "zhcn": "{0}小时后刷新"
+    },
+    {
+        "id": "code_shop_timeMin",
+        "zhcn": "距离商店刷新时间还有{0}"
+    },
+    {
+        "id": "code_shop_guildunlocklevel",
+        "zhcn": "公会{0}级可购买"
+    },
+    {
+        "id": "code_shop_unlocklevel",
+        "zhcn": "{0}级解锁"
+    },
+    {
+        "id": "code_shop_des1",
+        "zhcn": "每日限购({0}/{1})"
+    },
+    {
+        "id": "code_shop_des2",
+        "zhcn": "每周限购({0}/{1})"
+    },
+    {
+        "id": "code_shop_des3",
+        "zhcn": "每月限购({0}/{1})"
+    },
+    {
+        "id": "code_shop_des4",
+        "zhcn": "永久限购({0}/{1})"
+    },
+    {
+        "id": "code_shop_des5",
+        "zhcn": "剩余{0}次"
+    },
+    {
+        "id": "code_time_h",
+        "zhcn": "小时"
+    },
+    {
+        "id": "code_time_m",
+        "zhcn": "分钟"
+    },
+    {
+        "id": "code_time_s",
+        "zhcn": "秒"
+    },
+    {
+        "id": "code_mail_des",
+        "zhcn": "邮件数量:{0}"
+    },
+    {
+        "id": "code_mail_des1",
+        "zhcn": "剩余时间:{0}"
+    },
+    {
+        "id": "code_match_des1",
+        "zhcn": "{0}人"
+    },
+    {
+        "id": "code_match_des2",
+        "zhcn": "{0}级-{1}级"
+    },
+    {
+        "id": "code_match_des3",
+        "zhcn": "当前:{0}人"
+    },
+    {
+        "id": "code_match_des4",
+        "zhcn": "报名时间：{0}-{1}"
+    },
+    {
+        "id": "code_match_des5",
+        "zhcn": "报名成功"
+    },
+    {
+        "id": "code_match_des6",
+        "zhcn": "不在报名时间内"
+    },
+    {
+        "id": "code_match_des7",
+        "zhcn": "八强未开赛"
+    },
+    {
+        "id": "code_match_des8",
+        "zhcn": "未入榜"
+    },
+    {
+        "id": "code_match_des9",
+        "zhcn": "※[发放时间]根据排名发放奖励"
+    },
+    {
+        "id": "code_match_des10",
+        "zhcn": "请先报名"
+    },
+    {
+        "id": "code_match_des11",
+        "zhcn": "报名倒计时: "
+    },
+    {
+        "id": "code_match_des12",
+        "zhcn": "已报名"
+    },
+    {
+        "id": "code_match_des13",
+        "zhcn": "所属赛区: "
+    },
+    {
+        "id": "code_match_des14",
+        "zhcn": "未开赛"
+    },
+    {
+        "id": "code_match_des15",
+        "zhcn": "未参赛"
+    },
+    {
+        "id": "code_match_des16",
+        "zhcn": "总投入钻石: "
+    },
+    {
+        "id": "code_match_des17",
+        "zhcn": "猜他胜利"
+    },
+    {
+        "id": "code_match_des18",
+        "zhcn": "胜 利"
+    },
+    {
+        "id": "code_match_des19",
+        "zhcn": "失 败"
+    },
+    {
+        "id": "code_match_des20",
+        "zhcn": "下轮比赛时间: {0}"
+    },
+    {
+        "id": "code_leitai_des1",
+        "zhcn": "是否消耗{0}报名参加"
+    },
+    {
+        "id": "code_leitai_des2",
+        "zhcn": "创建擂台{0}分钟后自动开赛"
+    },
+    {
+        "id": "code_leitai_des3",
+        "zhcn": "房主"
+    },
+    {
+        "id": "code_leitai_des4",
+        "zhcn": "参与者"
+    },
+    {
+        "id": "code_leitai_des5",
+        "zhcn": "我"
+    },
+    {
+        "id": "code_leitai_des6",
+        "zhcn": "战斗中"
+    },
+    {
+        "id": "code_leitai_des7",
+        "zhcn": "等待中"
+    },
+    {
+        "id": "code_leitai_des8",
+        "zhcn": "失败"
+    },
+    {
+        "id": "code_leitai_des9",
+        "zhcn": "房主:"
+    },
+    {
+        "id": "code_leitai_des10",
+        "zhcn": "{0}/{1}"
+    },
+    {
+        "id": "code_leitai_des111",
+        "zhcn": "{0}-{1}"
+    },
+    {
+        "id": "code_leitai_des112",
+        "zhcn": "报名"
+    },
+    {
+        "id": "code_leitai_des13",
+        "zhcn": "已报名"
+    },
+    {
+        "id": "code_leitai_des14",
+        "zhcn": "创建"
+    },
+    {
+        "id": "code_leitai_des15",
+        "zhcn": "快速"
+    },
+    {
+        "id": "code_leitai_des16",
+        "zhcn": "加入"
+    },
+    {
+        "id": "code_leitai_des17",
+        "zhcn": "擂台"
+    },
+    {
+        "id": "code_leitai_des18",
+        "zhcn": "是否"
+    },
+    {
+        "id": "code_leitai_des19",
+        "zhcn": "你已经在房间内"
+    },
+    {
+        "id": "code_leitai_des20",
+        "zhcn": "暂未找到房间"
+    },
+    {
+        "id": "code_leitai_des21",
+        "zhcn": "进入战斗"
+    },
+    {
+        "id": "code_leitai_des22",
+        "zhcn": "比赛进行中"
+    },
+    {
+        "id": "code_leitai_des23",
+        "zhcn": "开赛倒计时"
+    },
+    {
+        "id": "code_leitai_des24",
+        "zhcn": "比赛倒计时"
+    },
+    {
+        "id": "code_leitai_des25",
+        "zhcn": "没有上期战报"
+    },
+    {
+        "id": "code_leitai_des26",
+        "zhcn": "比赛中"
+    },
+    {
+        "id": "code_leitai_des27",
+        "zhcn": "（{0}s后自动关闭）"
+    },
+    {
+        "id": "code_leitai_des28",
+        "zhcn": "擂台赛未成功开赛是否继续\n寻找房间参赛"
+    },
+    {
+        "id": "code_leitai_des29",
+        "zhcn": "擂台赛已开赛是否\n进入房间查看"
+    },
+    {
+        "id": "code_leitai_des30",
+        "zhcn": "消耗{0}快速寻找合适房间"
+    },
+    {
+        "id": "code_adventure_des1",
+        "zhcn": "冒险关卡"
+    },
+    {
+        "id": "code_adventure_des2",
+        "zhcn": "英雄塔"
+    },
+    {
+        "id": "code_adventure_des3",
+        "zhcn": "宝箱副本"
+    },
+    {
+        "id": "code_adventure_des4",
+        "zhcn": "开服活动"
+    },
+    {
+        "id": "code_copy_des1",
+        "zhcn": "通关次数和消耗将于每日0点重置"
+    },
+    {
+        "id": "code_copy_des4",
+        "zhcn": "今日次数{0}/{1}"
+    },
+    {
+        "id": "code_copy_des5",
+        "zhcn": "免费扫荡"
+    },
+    {
+        "id": "code_copy_des6",
+        "zhcn": "是否使用{0}x{1}继续扫荡?"
+    },
+    {
+        "id": "code_copy_des7",
+        "zhcn": "今日次数已用完"
+    },
+    {
+        "id": "code_openService_des1",
+        "zhcn": "七日签到"
+    },
+    {
+        "id": "code_openService_des2",
+        "zhcn": "七日挑战"
+    },
+    {
+        "id": "code_openService_des3",
+        "zhcn": "开服礼包"
+    },
+    {
+        "id": "code_openService_des4",
+        "zhcn": "是否花费{0}{1}钻石补领奖励"
+    },
+    {
+        "id": "code_openService_des5",
+        "zhcn": "开启后立即获得{0}x{1}"
+    },
+    {
+        "id": "code_openService_des6",
+        "zhcn": "每日限购{0}/{1}"
+    },
+    {
+        "id": "code_openService_des7",
+        "zhcn": "每周限购{0}/{1}"
+    },
+    {
+        "id": "code_openService_des8",
+        "zhcn": "永久限购{0}/{1}"
+    },
+    {
+        "id": "code_openService_des9",
+        "zhcn": "免 费"
+    },
+    {
+        "id": "code_recharge_des1",
+        "zhcn": "{0}元"
+    },
+    {
+        "id": "code_recharge_tab1",
+        "zhcn": "充值"
+    },
+    {
+        "id": "code_recharge_tab2",
+        "zhcn": "月卡"
+    },
+    {
+        "id": "code_recharge_tab3",
+        "zhcn": "通行证"
+    },
+    {
+        "id": "code_passCertificate_1",
+        "zhcn": "挑战"
+    },
+    {
+        "id": "code_recharge_tab5",
+        "zhcn": "外观"
+    },
+    {
+        "id": "code_passCertificate_1",
+        "zhcn": "挑战"
+    },
+    {
+        "id": "code_passCertificate_2",
+        "zhcn": "奖励"
+    },
+    {
+        "id": "code_passCertificate_3",
+        "zhcn": "第{0}日"
+    },
+    {
+        "id": "code_passCertificate_4",
+        "zhcn": "没有可领取的奖励"
+    },
+    {
+        "id": "code_otherRle_des1",
+        "zhcn": "武器"
+    },
+    {
+        "id": "code_otherRle_des2",
+        "zhcn": "技能"
+    },
+    {
+        "id": "code_otherRle_des3",
+        "zhcn": "第{0}名"
+    },
+    {
+        "id": "code_otherRle_des4",
+        "zhcn": "第{0}层"
+    },
+    {
+        "id": "code_monthCard_des1",
+        "zhcn": "剩余{0}天"
+    },
+    {
+        "id": "code_monthCard_des2",
+        "zhcn": "永久特权生效"
+    },
+    {
+        "id": "code_Appearance_des1",
+        "zhcn": "皮 肤"
+    },
+    {
+        "id": "code_Appearance_des2",
+        "zhcn": "其 他"
+    },
+    {
+        "id": "code_Appearance_des3",
+        "zhcn": "¥  {0}"
+    },
+    {
+        "id": "code_Appearance_des4",
+        "zhcn": "已拥有:{0}/{1}"
+    },
+    {
+        "id": "code_Appearance_des5",
+        "zhcn": "功能暂未开放"
+    },
+    {
+        "id": "code_roleAppearance_des1",
+        "zhcn": "永 久"
+    },
+    {
+        "id": "code_chat_des1",
+        "zhcn": "世界"
+    },
+    {
+        "id":"code_chatDownTime_des2",
+        "zhcn":"{0}秒再次发送"
+    },
+    {
+        "id":"code_roleAppearance_des2",
+        "zhcn":"剩余:{0}天"
+    },
+    {
+        "id":"code_roleAppearance_des3",
+        "zhcn":"基础时装"
+    },
+    {   
+        "id":"code_role_des1",
+        "zhcn": "技能等级不可超过玩家等级"
+    },
+    {   
+        "id":"code_role_des2",
+        "zhcn": "武器等级不可超过玩家等级"
+    },
+    {
+        "id":"code_PlazaChatItem_des1",
+        "zhcn":"<color =#F0C92D>[世界]</color>:{1}:{2}"
+    },
+    {
+        "id":"code_PlazaChatItem_des2",
+        "zhcn":"<color =#41EC16>[公会]</color>:{1}:{2}"
+    },
+    {
+        "id":"code_chat_des1",
+        "zhcn":"世界"
+    },
+    {
+        "id": "code_chat_des2",
+        "zhcn": "公会"
+    },
+    {
+        "id": "code_chat_des3",
+        "zhcn": "昨天{0}:{1}"
+    },
+    {
+        "id": "code_chat_des4",
+        "zhcn": "前天{0}:{1}"
+    },
+    {
+        "id": "code_chat_des5",
+        "zhcn": "{0}:{1}"
+    },
+    {
+        "id": "code_chat_des6",
+        "zhcn": "3天前{0}:{1}"
+    },
+    {
+        "id": "code_chat_des7",
+        "zhcn": "副会长"
+    },
+    {
+        "id": "code_chat_des8",
+        "zhcn": "会长"
+    },
+    {
+        "id": "code_chat_des9",
+        "zhcn": "点击输入......"
+    },
+    {
+        "id": "code_chat_des10",
+        "zhcn": "{0}级开启聊天"
+    },
+    {
+        "id": "code_WeaponTips_des1",
+        "zhcn": "Lv. {0}"
+    },
+    {
+        "id":"code_ItemReward_des1",
+        "zhcn":"{0}秒自动关闭"
+    },
+    {
+        "id": "code_path_des",
+        "zhcn": "前往"
+    },
+    {
+        "id": "code_server_recent",
+        "zhcn": "最近登录"
+    },
+    {
+        "id": "code_server_zone",
+        "zhcn": "分区{0}"
+    },
+    {
+        "id": "code_douyin_dec1",
+        "zhcn": "添加侧边栏"
+    },
+    {
+        "id": "code_douyin_dec2",
+        "zhcn": "领 取"
+    },
+    {
+        "id": "code_douyin_dec3",
+        "zhcn": "已领取"
+    },
+
+    {
+        "id":"code_selectServer_des1",
+        "zhcn":"即将开放"
+    },
+    {
+        "id":"code_selectServer_des2",
+        "zhcn":"区服正在维护中"
+    },
+    {
+        "id":"code_selectServer_des3",
+        "zhcn":"服务器已满"
+    },
+    {
+        "id": "code_button1",
+        "zhcn": "升 级"
+    },
+    {
+        "id": "code_button2",
+        "zhcn": "加 速"
+    },
+    {
+        "id": "code_button3",
+        "zhcn": "领 取"
+    },
+    {
+        "id": "code_button4",
+        "zhcn": "删 除"
+    },
+    {
+        "id": "code_button5",
+        "zhcn": "挑 战"
+    },
+    {
+        "id": "code_button6",
+        "zhcn": "快速挑战"
+    },
+    {
+        "id": "code_button7",
+        "zhcn": "挑 战"
+    },
+    {
+        "id": "code_button8",
+        "zhcn": "扫 荡"
+    },
+    {
+        "id": "code_button9",
+        "zhcn": "领 取"
+    },
+    {
+        "id": "code_button10",
+        "zhcn": "前 往"
+    },
+    {
+        "id": "code_button11",
+        "zhcn": "升 级"
+    },
+    {
+        "id": "code_button12",
+        "zhcn": "突 破"
+    },
+    {
+        "id": "code_button13",
+        "zhcn": "研 究"
+    },
+    {
+        "id": "code_button14",
+        "zhcn": "确 定"
+    },
+    {
+        "id": "code_button15",
+        "zhcn": "取 消"
+    },
+    {
+        "id": "code_button16",
+        "zhcn": "领取奖励"
+    },
+    {
+        "id": "code_button17",
+        "zhcn": "前 往"
+    },
+    {
+        "id": "code_button18",
+        "zhcn": "领 取"
+    },
+    {
+        "id": "code_button19",
+        "zhcn": "可补签"
+    },
+    {
+        "id": "code_button20",
+        "zhcn": "前 往"
+    },
+    {
+        "id": "code_button21",
+        "zhcn": "领 取"
+    },
+    {
+        "id": "code_button22",
+        "zhcn": "强 化"
+    },
+    {
+        "id": "code_button23",
+        "zhcn": "锻 造"
+    },
+    {
+        "id": "code_button24",
+        "zhcn": "升 星"
+    },
+    {
+        "id": "code_button25",
+        "zhcn": "创建房间"
+    },
+    {
+        "id": "code_button26",
+        "zhcn": "我的房间"
+    },
+    {
+        "id": "code_button27",
+        "zhcn": "快速加入"
+    },
+    {
+        "id": "code_button28",
+        "zhcn": "已报名"
+    },
+    {
+        "id": "code_button29",
+        "zhcn": "报 名"
+    },
+    {
+        "id": "code_button30",
+        "zhcn": "查看战报"
+    },
+    {
+        "id": "code_button31",
+        "zhcn": "6元"
+    },
+    {
+        "id": "code_button32",
+        "zhcn": "领 取"
+    },
+    {
+        "id": "code_button33",
+        "zhcn": "明日再领"
+    },
+    {
+        "id": "code_button34",
+        "zhcn": "后天领取"
+    },
+    {
+        "id": "code_button35",
+        "zhcn": "已领取"
+    },
+    {
+        "id": "code_button36",
+        "zhcn": "领 取"
+    },
+    {
+        "id": "code_button41",
+        "zhcn": "立即穿戴"
+    },
+    {
+        "id": "code_button42",
+        "zhcn": "前往查看"
+    },
+    {
+        "id":"code_button43",
+        "zhcn":"穿 戴"
+    },
+    {
+        "id":"code_button44",
+        "zhcn":"取消穿戴"
+    },
+    {
+        "id":"code_button45",
+        "zhcn":"¥ {0}"
+    },
+    {
+        "id": "code_error_1",
+        "zhcn": "配置错误"
+    },
+    {
+        "id": "code_error_1",
+        "zhcn": "配置错误"
+    },
+    {
+        "id": "code_error_4",
+        "zhcn": "操作频繁"
+    },
+    {
+        "id": "code_error_5",
+        "zhcn": "重连失败"
+    },
+    {
+        "id": "code_error_11",
+        "zhcn": "没有可领取的奖励"
+    },
+    {
+        "id": "code_error_1001",
+        "zhcn": "消耗道具不足"
+    },
+    {
+        "id": "code_error_1101",
+        "zhcn": "已在升级中请勿重复操作"
+    },
+    {
+        "id": "code_error_1102",
+        "zhcn": "宝箱内为空，无法穿戴 交换 分解"
+    },
+    {
+        "id": "code_error_1201",
+        "zhcn": "技能等级已达上限"
+    },
+    {
+        "id": "code_error_1202",
+        "zhcn": "技能不存在"
+    },
+    {
+        "id": "code_error_1203",
+        "zhcn": "没满足技能重置条件"
+    },
+    {
+        "id": "code_error_1301",
+        "zhcn": "武器等级已达上限"
+    },
+    {
+        "id": "code_error_1302",
+        "zhcn": "武器不存在"
+    },
+    {
+        "id": "code_error_1401",
+        "zhcn": "宠物已达上限"
+    },
+    {
+        "id": "code_error_1402",
+        "zhcn": "宠物不存在"
+    },
+    {
+        "id": "code_error_1403",
+        "zhcn": "不可喂养"
+    },
+    {
+        "id": "code_error_1604",
+        "zhcn": "公会名称已存在"
+    },
+    {
+        "id": "code_error_1610",
+        "zhcn": "公会会长无法退出"
+    },
+    {
+        "id": "code_error_1103",
+        "zhcn": "挑战券已满"
+    },
+    {
+        "id": "code_error_1902",
+        "zhcn": "聊天发送消息频繁,请稍后再试"
+    },
+    {
+        "id": "code_error_1001",
+        "zhcn": "材料不足，无法完成本次操作"
+    },
+    {
+        "id": "code_error_1801",
+        "zhcn": "擂台,未找到房间"
+    },
+    {
+        "id": "code_error_1601",
+        "zhcn": "已经创建过公会"
+    },
+    {
+        "id": "code_error_1602",
+        "zhcn": "公会名字长度超上限"
+    },
+    {
+        "id": "code_error_1605",
+        "zhcn": "公会宣言长度超上限"
+    },
+    {
+        "id": "code_error_1606",
+        "zhcn": "公会宣言存在敏感词"
+    },
+    {
+        "id": "code_error_1607",
+        "zhcn": "公会公告长度超上限"
+    },
+    {
+        "id": "code_error_1608",
+        "zhcn": "公会公告存在敏感词"
+    },
+    {
+        "id": "code_error_1609",
+        "zhcn": "公会头像未解锁"
+    },
+    {
+        "id": "code_error_1610",
+        "zhcn": "公会会长无法退出"
+    },
+    {
+        "id": "code_error_1611",
+        "zhcn": "公会退出后冷却"
+    },
+    {
+        "id": "code_error_1612",
+        "zhcn": "公会Boss挑战期间"
+    },
+    {
+        "id": "code_error_1613",
+        "zhcn": "公会Boss报名时间开始"
+    },
+    {
+        "id": "code_error_1614",
+        "zhcn": "公会Boss报名时间结束"
+    },
+    {
+        "id": "code_error_1615",
+        "zhcn": "公会申请记录已满"
+    },
+    {
+        "id": "code_error_1616",
+        "zhcn": "已申请请勿重复操作"
+    },
+    {
+        "id": "code_error_1617",
+        "zhcn": "公会权限不足"
+    },
+    {
+        "id": "code_error_1618",
+        "zhcn": "公会玩家已满"
+    },
+    {
+        "id": "code_error_1903",
+        "zhcn": "你已被禁言"
+    }
+]

@@ -1,0 +1,35 @@
+{
+    "10001": {
+        "id": 10001,
+        "name": "开服活动",
+        "atlas": "activityAtlas",
+        "nIcon": "act_kfhd_n",
+        "sIcon": "act_kfhd_s",
+        "bundle": "openService",
+        "panel": "OpenServicePanel",
+        "funcIconList": [
+            30001
+        ],
+        "sort": 1
+    },
+    "10002": {
+        "id": 10002,
+        "name": "首冲",
+        "atlas": "activityAtlas",
+        "nIcon": "act_sc_n",
+        "sIcon": "act_sc_s",
+        "bundle": "firstRecharge",
+        "panel": "FirstRechargePanel",
+        "funcIconList": [
+            30001
+        ],
+        "sort": 2
+    },
+    "10003": {
+        "id": 10003,
+        "name": "通行证",
+        "funcIconList": [
+            30002
+        ]
+    }
+}

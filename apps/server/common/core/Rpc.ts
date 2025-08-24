@@ -260,7 +260,7 @@ export class RpcClient extends EventEmitter {
    */
   private async heartbeat() {
     const { error } = await this.call("heartbeat", [this.id]);
-    this.logger.info("heartbeat!!");
+    // this.logger.info("heartbeat!!");
     if (error) {
       this.logger.fatal("heartbeat error", error);
       // 心跳检测失败则重连

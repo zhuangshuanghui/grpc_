@@ -43,7 +43,7 @@ export class LoginManager extends Component {
       headers: {
         "Content-Type": "application/json",
       },
-    }).then((res) => res.json());
+    }).then((res) => res.json()); //fetch提供的方法 将响应体从JSON字符串解析为JavaScript对象
     console.log("注册结果", res);
   }
 
