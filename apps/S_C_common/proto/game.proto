@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+message PlayerMove {
+  float x = 1;
+  float y = 2;
+}
+
+message PlayerInfo {
+  string name = 1;
+  uint32 hp = 2;
+}

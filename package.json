@@ -5,14 +5,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "common": "yarn workspace @mmo/server common",
+    "common": "yarn workspace s_c_common common",
     "start": "yarn workspace @mmo/server start",
     "deploy": "yarn workspace @mmo/server deploy",
     "test": "yarn workspace @mmo/server test"
   },
   "workspaces": [
     "apps/client",
-    "apps/server"
+    "apps/server",
+    "apps/S_C_common"
   ],
   "keywords": [],
   "author": "",
@@ -29,8 +30,8 @@
     "express": "^4.18.2",
     "fs-extra": "^11.1.1",
     "google-protobuf": "^3.21.2",
-    "grpc-tools": "~1.11.3",
     "grpc_tools_node_protoc_ts": "^5.3.3",
+    "grpc-tools": "~1.11.3",
     "jsencrypt": "^3.3.2",
     "mkdirp": "^3.0.0",
     "mysql": "^2.18.1",
@@ -38,6 +39,7 @@
     "node-jsencrypt": "^1.0.0",
     "protobufjs-cli": "^1.1.1",
     "reflect-metadata": "^0.1.13",
+    "socket.io-client": "^4.8.1",
     "ts-node": "^10.9.1",
     "typescript": "^5.0.4",
     "uuid": "^9.0.0",

@@ -1,5 +1,5 @@
 import axios from "axios";
-import { PublicKey, RpcFunc, ServerPort } from "../common";
+import { getProtoPathByRpcFunc, PublicKey, RpcFunc, ServerPort } from "../common";
 // @ts-ignore
 import JSCrypto from "node-jsencrypt";
 import NetworkManager from "./NetworkManager";
@@ -119,3 +119,11 @@ for (let i = 0; i < len; i++) {
     start(`a${i}`);
   }, 1000 / len);
 }
+
+Buffer
+function handlleMMessage(buf:Buffer){
+  const name=buf.readUInt8(0)
+  const path=getProtoPathByRpcFunc(name,"req")
+}
+
+

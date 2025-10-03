@@ -20,6 +20,12 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {},
-  "devDependencies": {}
+  "dependencies": {
+    "socket.io-client": "^4.8.1",
+    "protobufjs": "^7.2.4",
+    "protobufjs-cli": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/socket.io": "^3.0.2"
+  }
 }

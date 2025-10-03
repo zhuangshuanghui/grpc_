@@ -7,6 +7,9 @@ import ModuleReg from './core/window/config/ModuleReg';
 import { ResLoad } from './core/loader/ResLoad';
 import { LabelEx } from './ui/common/LabelEx';
 import { GUtil } from './util/GUtil';
+import { SocketManager } from './core/net/SocketManager';
+// import { io } from "socket.io-client";
+// import { SocketManager } from './core/net/SocketManager';
 const { ccclass, property } = _decorator;
 
 @ccclass('MainGame')
@@ -30,6 +33,7 @@ export class MainGame extends Component {
     }
 
     protected start(): void {
+        new SocketManager()
         this.init()
         this.scheduleOnce(() => {
             this.lab1.string = "按下s开始游戏......"
@@ -37,7 +41,10 @@ export class MainGame extends Component {
     }
 
     async init() {
+        // new SocketManager()
         //框架初始化
+        // console.log("zsh",typeof io); // 应该输出 "function"
+        // console.log(typeof fs); // 应该输出 "undefined"
         this.persistRoot = new Node("persistRoot");
         director.addPersistRootNode(this.persistRoot);
         ManagerCenter.layerMgr = new LayerManager(this.uiCanvas);
@@ -55,6 +62,7 @@ export class MainGame extends Component {
         await this.preloadRes();
         //进入游戏
         this.startGame();
+        
         //输出游戏节点
         this.tiaosho()
         // 启用键盘输入
