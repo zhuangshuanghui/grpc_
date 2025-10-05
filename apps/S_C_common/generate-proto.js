@@ -32,7 +32,7 @@ fs.readdirSync('./gen').forEach(f => {
   }
 });
 
-//生成到客户端
+//生成到服务端
 fs.readdirSync('./proto').forEach(f => {
   if (f.endsWith('.proto')) {
     const name = f.replace('.proto', '');

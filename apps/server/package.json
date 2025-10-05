@@ -15,7 +15,8 @@
     "common": "yarn gen-grpc && yarn gen-ws && yarn gen-link",
     "start": "yarn common && concurrently \"yarn game\" \"yarn auth\" \"yarn gateway\" \"yarn scene\" \"yarn replication\" -n game,auth,gateway,scene,replication -p {time}-{name}",
     "deploy": "yarn common && tsc && pm2 start ./auth/index.js  --restart-delay=3000 -n auth --time  && pm2 start ./game/index.js --restart-delay=3000 -n game --time && pm2 start ./gateway/index.js --restart-delay=3000 -n gateway --time && pm2 start ./scene/scene/scene1.js --restart-delay=3000 -n scene1 --time && pm2 start ./scene/scene/Scene2.js --restart-delay=3000 -n scene2 --time && pm2 start ./replication/index.js --restart-delay=3000 -n replica --time",
-    "test": "ts-node ./test/index.ts"
+    "test": "ts-node ./test/index.ts",
+    "sokcet_server": "ts-node ./Socket/Socket_server"
   },
   "keywords": [],
   "author": "",

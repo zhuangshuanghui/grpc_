@@ -2,6 +2,7 @@ import { Server, Socket } from "socket.io";
 import { createServer } from "http";
 import { readFileSync } from "fs";
 import protobuf from "protobufjs";
+import { PlayerInfo, PlayerMove } from "../gen/game_pb";
 
 // --------------- 1. 初始化 HTTP 和 Socket.IO 服务器 ---------------
 const httpServer = createServer();
@@ -29,7 +30,7 @@ message PlayerAttack {
 
 // 加载 Protobuf 协议
 const root = protobuf.parse(protoDefinition).root;
-const PlayerMove = root.lookupType("PlayerMove");
+// const PlayerMove = root.lookupType("PlayerMove");
 const PlayerAttack = root.lookupType("PlayerAttack");
 
 // --------------- 3. 核心逻辑：处理客户端连接 ---------------
@@ -40,6 +41,7 @@ io.on("connection", (socket: Socket) => {
   // 心跳检测（客户端需定时发送 `ping` 事件）
   socket.on("ping", () => {
     socket.emit("pong", Date.now());
+    console.log("pong");
   });
 
   // 接收普通 JSON 消息
@@ -62,12 +64,10 @@ io.on("connection", (socket: Socket) => {
     console.log(`[房间] ${socket.id} 离开房间 ${roomId}`);
   });
 
-  socket.on("zsh_test", (message:string) => {
-    console.log(`zsh_test: ${message}`);
-
-    socket.emit("ask_question", "What's your name?", (answer:string) => {
-      console.log (`客户端回复: ${answer}`);
-    });
+  socket.on('zsh_test', (data, callback) => {
+    console.log('收到客户端数据:', data); // "123456"
+    // 处理逻辑...
+    callback('这是服务器返回的数据');
   });
   // --------------- 3.3 二进制消息（Protobuf）处理 ---------------
   // 接收 Protobuf 编码的玩家移动数据

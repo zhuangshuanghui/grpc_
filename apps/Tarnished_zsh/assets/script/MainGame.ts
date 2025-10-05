@@ -8,8 +8,9 @@ import { ResLoad } from './core/loader/ResLoad';
 import { LabelEx } from './ui/common/LabelEx';
 import { GUtil } from './util/GUtil';
 import { SocketManager } from './core/net/SocketManager';
-// import { io } from "socket.io-client";
-// import { SocketManager } from './core/net/SocketManager';
+import tsrpc_connent from './core/net/tsrpc_connent';
+import * as zs from './core/3rd/gen/game_pb.js';
+// import * as game1 from './core/3rd/gen/game_pb.js';
 const { ccclass, property } = _decorator;
 
 @ccclass('MainGame')
@@ -33,18 +34,15 @@ export class MainGame extends Component {
     }
 
     protected start(): void {
-        new SocketManager()
         this.init()
+        console.log(zs);
+        new SocketManager()
         this.scheduleOnce(() => {
             this.lab1.string = "按下s开始游戏......"
         },2)
     }
 
     async init() {
-        // new SocketManager()
-        //框架初始化
-        // console.log("zsh",typeof io); // 应该输出 "function"
-        // console.log(typeof fs); // 应该输出 "undefined"
         this.persistRoot = new Node("persistRoot");
         director.addPersistRootNode(this.persistRoot);
         ManagerCenter.layerMgr = new LayerManager(this.uiCanvas);

@@ -1,207 +1,211 @@
 import * as $protobuf from "protobufjs";
 import Long = require("long");
-/** Properties of a PlayerMove. */
-export interface IPlayerMove {
+/** Namespace game. */
+export namespace game {
 
-    /** PlayerMove x */
-    x?: (number|null);
+    /** Properties of a PlayerMove. */
+    interface IPlayerMove {
 
-    /** PlayerMove y */
-    y?: (number|null);
-}
+        /** PlayerMove x */
+        x?: (number|null);
 
-/** Represents a PlayerMove. */
-export class PlayerMove implements IPlayerMove {
+        /** PlayerMove y */
+        y?: (number|null);
+    }
 
-    /**
-     * Constructs a new PlayerMove.
-     * @param [properties] Properties to set
-     */
-    constructor(properties?: IPlayerMove);
+    /** Represents a PlayerMove. */
+    class PlayerMove implements IPlayerMove {
 
-    /** PlayerMove x. */
-    public x: number;
+        /**
+         * Constructs a new PlayerMove.
+         * @param [properties] Properties to set
+         */
+        constructor(properties?: game.IPlayerMove);
 
-    /** PlayerMove y. */
-    public y: number;
+        /** PlayerMove x. */
+        public x: number;
 
-    /**
-     * Creates a new PlayerMove instance using the specified properties.
-     * @param [properties] Properties to set
-     * @returns PlayerMove instance
-     */
-    public static create(properties?: IPlayerMove): PlayerMove;
+        /** PlayerMove y. */
+        public y: number;
 
-    /**
-     * Encodes the specified PlayerMove message. Does not implicitly {@link PlayerMove.verify|verify} messages.
-     * @param message PlayerMove message or plain object to encode
-     * @param [writer] Writer to encode to
-     * @returns Writer
-     */
-    public static encode(message: IPlayerMove, writer?: $protobuf.Writer): $protobuf.Writer;
+        /**
+         * Creates a new PlayerMove instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns PlayerMove instance
+         */
+        public static create(properties?: game.IPlayerMove): game.PlayerMove;
 
-    /**
-     * Encodes the specified PlayerMove message, length delimited. Does not implicitly {@link PlayerMove.verify|verify} messages.
-     * @param message PlayerMove message or plain object to encode
-     * @param [writer] Writer to encode to
-     * @returns Writer
-     */
-    public static encodeDelimited(message: IPlayerMove, writer?: $protobuf.Writer): $protobuf.Writer;
+        /**
+         * Encodes the specified PlayerMove message. Does not implicitly {@link game.PlayerMove.verify|verify} messages.
+         * @param message PlayerMove message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encode(message: game.IPlayerMove, writer?: $protobuf.Writer): $protobuf.Writer;
 
-    /**
-     * Decodes a PlayerMove message from the specified reader or buffer.
-     * @param reader Reader or buffer to decode from
-     * @param [length] Message length if known beforehand
-     * @returns PlayerMove
-     * @throws {Error} If the payload is not a reader or valid buffer
-     * @throws {$protobuf.util.ProtocolError} If required fields are missing
-     */
-    public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): PlayerMove;
+        /**
+         * Encodes the specified PlayerMove message, length delimited. Does not implicitly {@link game.PlayerMove.verify|verify} messages.
+         * @param message PlayerMove message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encodeDelimited(message: game.IPlayerMove, writer?: $protobuf.Writer): $protobuf.Writer;
 
-    /**
-     * Decodes a PlayerMove message from the specified reader or buffer, length delimited.
-     * @param reader Reader or buffer to decode from
-     * @returns PlayerMove
-     * @throws {Error} If the payload is not a reader or valid buffer
-     * @throws {$protobuf.util.ProtocolError} If required fields are missing
-     */
-    public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): PlayerMove;
+        /**
+         * Decodes a PlayerMove message from the specified reader or buffer.
+         * @param reader Reader or buffer to decode from
+         * @param [length] Message length if known beforehand
+         * @returns PlayerMove
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): game.PlayerMove;
 
-    /**
-     * Verifies a PlayerMove message.
-     * @param message Plain object to verify
-     * @returns `null` if valid, otherwise the reason why it is not
-     */
-    public static verify(message: { [k: string]: any }): (string|null);
+        /**
+         * Decodes a PlayerMove message from the specified reader or buffer, length delimited.
+         * @param reader Reader or buffer to decode from
+         * @returns PlayerMove
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): game.PlayerMove;
 
-    /**
-     * Creates a PlayerMove message from a plain object. Also converts values to their respective internal types.
-     * @param object Plain object
-     * @returns PlayerMove
-     */
-    public static fromObject(object: { [k: string]: any }): PlayerMove;
+        /**
+         * Verifies a PlayerMove message.
+         * @param message Plain object to verify
+         * @returns `null` if valid, otherwise the reason why it is not
+         */
+        public static verify(message: { [k: string]: any }): (string|null);
 
-    /**
-     * Creates a plain object from a PlayerMove message. Also converts values to other types if specified.
-     * @param message PlayerMove
-     * @param [options] Conversion options
-     * @returns Plain object
-     */
-    public static toObject(message: PlayerMove, options?: $protobuf.IConversionOptions): { [k: string]: any };
+        /**
+         * Creates a PlayerMove message from a plain object. Also converts values to their respective internal types.
+         * @param object Plain object
+         * @returns PlayerMove
+         */
+        public static fromObject(object: { [k: string]: any }): game.PlayerMove;
 
-    /**
-     * Converts this PlayerMove to JSON.
-     * @returns JSON object
-     */
-    public toJSON(): { [k: string]: any };
+        /**
+         * Creates a plain object from a PlayerMove message. Also converts values to other types if specified.
+         * @param message PlayerMove
+         * @param [options] Conversion options
+         * @returns Plain object
+         */
+        public static toObject(message: game.PlayerMove, options?: $protobuf.IConversionOptions): { [k: string]: any };
 
-    /**
-     * Gets the default type url for PlayerMove
-     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
-     * @returns The default type url
-     */
-    public static getTypeUrl(typeUrlPrefix?: string): string;
-}
+        /**
+         * Converts this PlayerMove to JSON.
+         * @returns JSON object
+         */
+        public toJSON(): { [k: string]: any };
 
-/** Properties of a PlayerInfo. */
-export interface IPlayerInfo {
+        /**
+         * Gets the default type url for PlayerMove
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
+    }
 
-    /** PlayerInfo name */
-    name?: (string|null);
+    /** Properties of a PlayerInfo. */
+    interface IPlayerInfo {
 
-    /** PlayerInfo hp */
-    hp?: (number|null);
-}
+        /** PlayerInfo name */
+        name?: (string|null);
 
-/** Represents a PlayerInfo. */
-export class PlayerInfo implements IPlayerInfo {
+        /** PlayerInfo hp */
+        hp?: (number|null);
+    }
 
-    /**
-     * Constructs a new PlayerInfo.
-     * @param [properties] Properties to set
-     */
-    constructor(properties?: IPlayerInfo);
+    /** Represents a PlayerInfo. */
+    class PlayerInfo implements IPlayerInfo {
 
-    /** PlayerInfo name. */
-    public name: string;
+        /**
+         * Constructs a new PlayerInfo.
+         * @param [properties] Properties to set
+         */
+        constructor(properties?: game.IPlayerInfo);
 
-    /** PlayerInfo hp. */
-    public hp: number;
+        /** PlayerInfo name. */
+        public name: string;
 
-    /**
-     * Creates a new PlayerInfo instance using the specified properties.
-     * @param [properties] Properties to set
-     * @returns PlayerInfo instance
-     */
-    public static create(properties?: IPlayerInfo): PlayerInfo;
+        /** PlayerInfo hp. */
+        public hp: number;
 
-    /**
-     * Encodes the specified PlayerInfo message. Does not implicitly {@link PlayerInfo.verify|verify} messages.
-     * @param message PlayerInfo message or plain object to encode
-     * @param [writer] Writer to encode to
-     * @returns Writer
-     */
-    public static encode(message: IPlayerInfo, writer?: $protobuf.Writer): $protobuf.Writer;
+        /**
+         * Creates a new PlayerInfo instance using the specified properties.
+         * @param [properties] Properties to set
+         * @returns PlayerInfo instance
+         */
+        public static create(properties?: game.IPlayerInfo): game.PlayerInfo;
 
-    /**
-     * Encodes the specified PlayerInfo message, length delimited. Does not implicitly {@link PlayerInfo.verify|verify} messages.
-     * @param message PlayerInfo message or plain object to encode
-     * @param [writer] Writer to encode to
-     * @returns Writer
-     */
-    public static encodeDelimited(message: IPlayerInfo, writer?: $protobuf.Writer): $protobuf.Writer;
+        /**
+         * Encodes the specified PlayerInfo message. Does not implicitly {@link game.PlayerInfo.verify|verify} messages.
+         * @param message PlayerInfo message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encode(message: game.IPlayerInfo, writer?: $protobuf.Writer): $protobuf.Writer;
 
-    /**
-     * Decodes a PlayerInfo message from the specified reader or buffer.
-     * @param reader Reader or buffer to decode from
-     * @param [length] Message length if known beforehand
-     * @returns PlayerInfo
-     * @throws {Error} If the payload is not a reader or valid buffer
-     * @throws {$protobuf.util.ProtocolError} If required fields are missing
-     */
-    public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): PlayerInfo;
+        /**
+         * Encodes the specified PlayerInfo message, length delimited. Does not implicitly {@link game.PlayerInfo.verify|verify} messages.
+         * @param message PlayerInfo message or plain object to encode
+         * @param [writer] Writer to encode to
+         * @returns Writer
+         */
+        public static encodeDelimited(message: game.IPlayerInfo, writer?: $protobuf.Writer): $protobuf.Writer;
 
-    /**
-     * Decodes a PlayerInfo message from the specified reader or buffer, length delimited.
-     * @param reader Reader or buffer to decode from
-     * @returns PlayerInfo
-     * @throws {Error} If the payload is not a reader or valid buffer
-     * @throws {$protobuf.util.ProtocolError} If required fields are missing
-     */
-    public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): PlayerInfo;
+        /**
+         * Decodes a PlayerInfo message from the specified reader or buffer.
+         * @param reader Reader or buffer to decode from
+         * @param [length] Message length if known beforehand
+         * @returns PlayerInfo
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decode(reader: ($protobuf.Reader|Uint8Array), length?: number): game.PlayerInfo;
 
-    /**
-     * Verifies a PlayerInfo message.
-     * @param message Plain object to verify
-     * @returns `null` if valid, otherwise the reason why it is not
-     */
-    public static verify(message: { [k: string]: any }): (string|null);
+        /**
+         * Decodes a PlayerInfo message from the specified reader or buffer, length delimited.
+         * @param reader Reader or buffer to decode from
+         * @returns PlayerInfo
+         * @throws {Error} If the payload is not a reader or valid buffer
+         * @throws {$protobuf.util.ProtocolError} If required fields are missing
+         */
+        public static decodeDelimited(reader: ($protobuf.Reader|Uint8Array)): game.PlayerInfo;
 
-    /**
-     * Creates a PlayerInfo message from a plain object. Also converts values to their respective internal types.
-     * @param object Plain object
-     * @returns PlayerInfo
-     */
-    public static fromObject(object: { [k: string]: any }): PlayerInfo;
+        /**
+         * Verifies a PlayerInfo message.
+         * @param message Plain object to verify
+         * @returns `null` if valid, otherwise the reason why it is not
+         */
+        public static verify(message: { [k: string]: any }): (string|null);
 
-    /**
-     * Creates a plain object from a PlayerInfo message. Also converts values to other types if specified.
-     * @param message PlayerInfo
-     * @param [options] Conversion options
-     * @returns Plain object
-     */
-    public static toObject(message: PlayerInfo, options?: $protobuf.IConversionOptions): { [k: string]: any };
+        /**
+         * Creates a PlayerInfo message from a plain object. Also converts values to their respective internal types.
+         * @param object Plain object
+         * @returns PlayerInfo
+         */
+        public static fromObject(object: { [k: string]: any }): game.PlayerInfo;
 
-    /**
-     * Converts this PlayerInfo to JSON.
-     * @returns JSON object
-     */
-    public toJSON(): { [k: string]: any };
+        /**
+         * Creates a plain object from a PlayerInfo message. Also converts values to other types if specified.
+         * @param message PlayerInfo
+         * @param [options] Conversion options
+         * @returns Plain object
+         */
+        public static toObject(message: game.PlayerInfo, options?: $protobuf.IConversionOptions): { [k: string]: any };
 
-    /**
-     * Gets the default type url for PlayerInfo
-     * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
-     * @returns The default type url
-     */
-    public static getTypeUrl(typeUrlPrefix?: string): string;
+        /**
+         * Converts this PlayerInfo to JSON.
+         * @returns JSON object
+         */
+        public toJSON(): { [k: string]: any };
+
+        /**
+         * Gets the default type url for PlayerInfo
+         * @param [typeUrlPrefix] your custom typeUrlPrefix(default "type.googleapis.com")
+         * @returns The default type url
+         */
+        public static getTypeUrl(typeUrlPrefix?: string): string;
+    }
 }
