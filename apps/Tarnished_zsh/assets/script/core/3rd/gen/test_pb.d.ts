@@ -3,51 +3,6 @@ import Long = require("long");
 /** Namespace test. */
 export namespace test {
 
-    /** Represents a Test */
-    class Test extends $protobuf.rpc.Service {
-
-        /**
-         * Constructs a new Test service.
-         * @param rpcImpl RPC implementation
-         * @param [requestDelimited=false] Whether requests are length-delimited
-         * @param [responseDelimited=false] Whether responses are length-delimited
-         */
-        constructor(rpcImpl: $protobuf.RPCImpl, requestDelimited?: boolean, responseDelimited?: boolean);
-
-        /**
-         * Creates new Test service using the specified rpc implementation.
-         * @param rpcImpl RPC implementation
-         * @param [requestDelimited=false] Whether requests are length-delimited
-         * @param [responseDelimited=false] Whether responses are length-delimited
-         * @returns RPC service. Useful where requests and/or responses are streamed.
-         */
-        public static create(rpcImpl: $protobuf.RPCImpl, requestDelimited?: boolean, responseDelimited?: boolean): Test;
-
-        /**
-         * Calls SayTest.
-         * @param request TestReq message or plain object
-         * @param callback Node-style callback called with the error, if any, and TestRes
-         */
-        public sayTest(request: test.ITestReq, callback: test.Test.SayTestCallback): void;
-
-        /**
-         * Calls SayTest.
-         * @param request TestReq message or plain object
-         * @returns Promise
-         */
-        public sayTest(request: test.ITestReq): Promise<test.TestRes>;
-    }
-
-    namespace Test {
-
-        /**
-         * Callback as used by {@link test.Test#sayTest}.
-         * @param error Error, if any
-         * @param [response] TestRes
-         */
-        type SayTestCallback = (error: (Error|null), response?: test.TestRes) => void;
-    }
-
     /** Properties of a TestReq. */
     interface ITestReq {
 

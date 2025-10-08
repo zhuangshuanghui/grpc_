@@ -2,7 +2,8 @@ import { Server, Socket } from "socket.io";
 import { createServer } from "http";
 import { readFileSync } from "fs";
 import protobuf from "protobufjs";
-import { PlayerInfo, PlayerMove } from "../gen/game_pb";
+import { ProtoUtils } from "../test/ProtoUtils";
+import { game } from "../gen/game_pb";
 
 // --------------- 1. 初始化 HTTP 和 Socket.IO 服务器 ---------------
 const httpServer = createServer();
@@ -67,7 +68,16 @@ io.on("connection", (socket: Socket) => {
   socket.on('zsh_test', (data, callback) => {
     console.log('收到客户端数据:', data); // "123456"
     // 处理逻辑...
-    callback('这是服务器返回的数据');
+    let res=ProtoUtils.deserialize(game.PlayerMove,data)
+    console.log("🚀 ~ res:", res)
+
+    let playerMove2 = {
+            x: 10000,
+            y: 20650
+        }
+    let res2=ProtoUtils.serialize(game.PlayerMove,playerMove2)
+    console.log("🚀 ~ res2:", res2)
+    callback(res2);
   });
   // --------------- 3.3 二进制消息（Protobuf）处理 ---------------
   // 接收 Protobuf 编码的玩家移动数据

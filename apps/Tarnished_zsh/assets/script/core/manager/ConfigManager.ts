@@ -22,6 +22,7 @@ export class ConfigManager extends SingtonClass {
         'adventure',
         'testTable',
         'i18nCode',
+        'zsh_test',
     ];
 
     /**
@@ -84,17 +85,31 @@ export class ConfigManager extends SingtonClass {
                     curCfg = curCfg[param[i]]
                 }
                 else {
-                    // if (ChannelConfig.showLog) {
-                    //     GWarn(StringUtil.format2("表配错了！表({0})不存在ID: {1}", cfgname, param[i]))
-                    // }
                     console.error("表配错了！表({0})不存在ID: {1}");
-                    
                     return null;
                 }
             }
             return curCfg;
         }
         return null;
+    }
+
+
+        public getConfogLength(cfgname: string) {
+        if (this.m_confogLength == null) {
+            this.m_confogLength = {};
+        }
+        if (!this.m_confogLength[cfgname]) {
+            this.m_confogLength[cfgname] = 0;
+            let cfgList = this.getConfigData(cfgname);
+            if (cfgList) {
+                for (const key in cfgList) {
+                    this.m_confogLength[cfgname] = this.m_confogLength[cfgname] + 1;
+                }
+            }
+        }
+
+        return this.m_confogLength[cfgname];
     }
 
 

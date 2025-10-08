@@ -52,6 +52,7 @@
     "@types/fs-extra": "^11.0.1",
     "@types/mysql": "^2.15.21",
     "@types/node": "^18.19.129",
+    "@types/protobufjs": "^6.0.0",
     "@types/socket.io-client": "^3.0.0",
     "@types/sqlstring": "^2.3.0",
     "@types/uuid": "^9.0.1",

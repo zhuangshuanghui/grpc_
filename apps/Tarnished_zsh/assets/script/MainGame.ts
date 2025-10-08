@@ -8,9 +8,13 @@ import { ResLoad } from './core/loader/ResLoad';
 import { LabelEx } from './ui/common/LabelEx';
 import { GUtil } from './util/GUtil';
 import { SocketManager } from './core/net/SocketManager';
-import tsrpc_connent from './core/net/tsrpc_connent';
-import * as zs from './core/3rd/gen/game_pb.js';
-// import * as game1 from './core/3rd/gen/game_pb.js';
+import { game_proto, test_proto } from './core/3rd/gen/proto_helper';
+import { ProtoUtils } from './util/ProtoUtils';
+import { DataCenter } from './core/center/DataCenter';
+import { Modules1Proxy } from './modules/modules1/Modules1Proxy';
+import CCCExtension from '../libs/VirtualList/CCCExtension';
+import RecycleScroll from '../libs/VirtualList/RecycleScroll';
+import { Item } from '../libs/VirtualList/Item';
 const { ccclass, property } = _decorator;
 
 @ccclass('MainGame')
@@ -34,22 +38,20 @@ export class MainGame extends Component {
     }
 
     protected start(): void {
+        
         this.init()
-        console.log(zs);
-        new SocketManager()
         this.scheduleOnce(() => {
             this.lab1.string = "按下s开始游戏......"
-        },2)
+        }, 2)
     }
 
     async init() {
+        new SocketManager()
+        CCCExtension.init()
         this.persistRoot = new Node("persistRoot");
         director.addPersistRootNode(this.persistRoot);
         ManagerCenter.layerMgr = new LayerManager(this.uiCanvas);
-        // ManagerCenter.audioMgr.init();
-        // await ChannelConfig.init();
-        // ManagerCenter.sdk.init();
-        // ManagerCenter.netMgr.Init();   
+        ManagerCenter.proxyManager.init();
         GUtil.init()
         Util.GAddClick(this.ButtonEx1, this.onBtnClick, this);
         //注册类  ui窗口类
@@ -60,12 +62,16 @@ export class MainGame extends Component {
         await this.preloadRes();
         //进入游戏
         this.startGame();
-        
         //输出游戏节点
         this.tiaosho()
         // 启用键盘输入
         input.on(Input.EventType.KEY_DOWN, this.onKeyDown, this);
         input.on(Input.EventType.KEY_UP, this.onKeyUp, this);
+        
+    }
+
+    onItemRender(index: number, node: Node) {
+        node.getComponent(Item).setData({ id: index })
     }
 
     async preloadRes() {

@@ -11,10 +11,12 @@ export class ProtoUtils {
      */
     public static serialize<T extends { encode(message: any): protobuf.Writer }>(
         msgType: T,
-        data: Parameters<T['encode']>[0]
+        // data: Parameters<T['encode']>[0],
+        data:any
     ): Uint8Array {
         try {
-            const writer = msgType.encode(data);
+            let data2 = msgType.create(data);
+            const writer = msgType.encode(data2);
             return writer.finish();
         } catch (error: unknown) {
             const errMsg = error instanceof Error ? error.message : 'Unknown error';

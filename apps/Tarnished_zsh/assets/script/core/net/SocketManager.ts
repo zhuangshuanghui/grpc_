@@ -1,26 +1,27 @@
-// import { io, Socket } from "socket.io-client";
-// import { io, Socket } from "socket.io-client/dist/socket.io.esm.min.js";
-
+import { Socket } from 'socket.io-client';
 import { ClientToServerEvents } from "../common/SocketIoEventDefine_client";
 import { ServerToClientEvents } from "../common/SocketIoEventDefine_server";
 import { ProtoUtils } from "../../util/ProtoUtils";
+import { game_proto } from '../3rd/gen/proto_helper';
+import { SingtonClass } from '../../util/SingtonClass';
 // import { PlayerMove } from "../3rd/gen/game_pb";
-export class SocketManager {
-    private socket: Socket<ServerToClientEvents, ClientToServerEvents>;
+export class SocketManager extends SingtonClass {
+    public socket: Socket<ServerToClientEvents, ClientToServerEvents>;
     private isManualDisconnect: boolean = false;
     private messageCallbacks: Map<string, (data: any) => void> = new Map(); // 消息回调映射表
     private reconnectAttempts: number = 0; // 当前重连尝试次数
     private readonly maxReconnectAttempts: number = 5; // 最大重连尝试次数
 
     constructor(url: string = "http://localhost:3000") {
-        this.socket= io(url, {
+        super()
+        this.socket = io(url, {
             transports: ["websocket"],
             reconnection: true,
             reconnectionAttempts: 5,
             reconnectionDelay: 1000,
         });
         this.setupEventListeners();
-        
+
     }
 
     // ================= 基础事件监听 =================
@@ -31,20 +32,6 @@ export class SocketManager {
             console.log("你的socketID:", this.socket.id);
             // this.emitEvent("connect"); // 触发自定义连接事件
 
-
-            let playerMove2 = { 
-                x: 100, 
-                y: 200 
-            }
-            // let playerMove =PlayerMove.create(playerMove2);
-            // { 
-            //     x: 100, 
-            //     y: 200 
-            // }
-            
-            
-            // const binaryData =  ProtoUtils.serialize(PlayerMove, playerMove);
-            
             // this.socket.emit("zsh_test", binaryData, (response) => {
             //     console.log("服务器返回的数据:", response); // "这是服务器返回的数据"
             //   });
@@ -69,30 +56,29 @@ export class SocketManager {
         });
 
         // 心跳检测（可选）
-        this.socket.on("ping", () => {
-            console.log("Received ping from server");
-            this.socket.emit("pong"); // 自动响应
-            // this.socket.emit("")
-        });
+        // this.socket.on("ping", () => {
+        //     console.log("Received ping from server");
+        //     this.socket.emit("pong"); // 自动响应
+        //     // this.socket.emit("")
+        // });
 
         // 通用消息监听
         this.socket.on("message", (data: any) => {
             this.handleIncomingMessage(data);
         });
 
-        
 
 
     }
 
-    // ================= 消息收发核心方法 =================
+    // ================= 消息收发核心方法 =================  不建议，没有类型提示
     /**
      * 发送消息到服务器
      * @param event 事件名称
      * @param data 发送的数据
      * @param callback 可选的回调函数（用于需要响应的消息）
      */
-    public send(event:any, data?: any, callback?: (response: any) => void): void {
+    public send(event: any, data?: any, callback?: (response: any) => void): void {
         if (!this.socket.connected) {
             console.warn("Socket not connected, message not sent:", event);
             return;
@@ -113,6 +99,7 @@ export class SocketManager {
     public onMessage(event: string, callback: (data: any) => void): void {
         this.messageCallbacks.set(event, callback);
     }
+
 
     /**
      * 移除消息回调
@@ -261,4 +248,10 @@ export class SocketManager {
             });
         }
     }
+
+    
+    public get socket_one() {
+        return this.socket
+    }
+    
 }
