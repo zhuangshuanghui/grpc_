@@ -5,6 +5,7 @@ today--------f.endsWith('_pb.js')) { const name = f.replace('_pb.js', ''); requi
 坐低 低头 放松 脚放开 放松后脑交叉神经
 ------------------------
 
+F:\cocosAll\cocos\grpc_\apps\Tarnished_zsh\assets\script\core
 
 
 
