@@ -15,4 +15,5 @@ export const CodeText: Record<CodeEnum, string> = {
   [CodeEnum.AccountExist]: "账号已存在",
   [CodeEnum.UsernameOrPasswordError]: "账号或者密码错误",
   //检查github
+  //你好
 };
