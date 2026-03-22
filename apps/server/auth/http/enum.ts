@@ -14,4 +14,5 @@ export const CodeText: Record<CodeEnum, string> = {
   [CodeEnum.SqlError]: "数据库异常",
   [CodeEnum.AccountExist]: "账号已存在",
   [CodeEnum.UsernameOrPasswordError]: "账号或者密码错误",
+  //检查github
 };
