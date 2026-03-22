@@ -1,5 +1,6 @@
 import express from "express";
 import { v4 as uuid } from "uuid";
+import bodyParser from "body-parser";
 import cors from "cors";
 import { verifyAndParse } from "./middleware";
 import { CodeEnum } from "./enum";
